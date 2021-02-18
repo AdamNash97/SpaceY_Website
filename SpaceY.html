@@ -10,8 +10,82 @@
   <link rel="stylesheet" type="text/css" href="SpaceY.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- Bootstrap -->
   <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Font awesome -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!--Dropdown script-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="SpaceY.js"></script>
   <title>SpaceY</title>
+
+  <style>
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      margin-top:13px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: right;
+      overflow: hidden;
+      position: relative;
+      z-index:999;
+    }
+    
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      z-index:999;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      min-height:25rem;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index:999;
+    }
+
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .show {
+      display: block;
+    }
+    </style>
+
+
 </head>
 
 <body>
@@ -24,21 +98,59 @@
     <h1>SpaceY</h1>
   </div>
 
-  <div class="topnav">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Declarations/ Waivers</a>
+  <div class="navbar">
+    <a href="#home">Menu3</a>
+    <a href="#news">Menu2</a>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Menu1
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    </div> 
+
+     
   </div>
+
+
+<!--  <div class="topnav">
   
+    
+    <a href="#">Home</a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    
+
+    </div> -->
+
+    
+
+
+
+    
+  </div>
+
   <div class="flex-container-single">
-    <div>
+    <div class="buttoncontainer" id="blink-text">
       <img src="images/launchWithSmoke.png" width = 865px height = 400px alt="SpaceY Rocket Launch, February 2021">
+      <button class="btn"><a href="https://mars.nasa.gov/mars2020/timeline/landing/watch-online/">Watch Live Stream</button>
     </div>  
   </div>
   
   <div class="flex-container-triple">
     <div>
       <img src="images/Moon.png" width = 275px height = 270px alt="Moon">
+      <p>Romantic Lunar Getaways for Two</p>
     </div>  
     <div>
       <img src="images/marsWalk.png" width = 275px height = 270px alt="Mars">
@@ -49,7 +161,11 @@
   </div>
 
 
+
+
 </body>
+
+-->
  
  <!-- Footer begins here -->
 
@@ -72,13 +188,29 @@
             <div class="well well-sm">
                 <form class="form-horizontal" action="" method="post">
                 <fieldset>
-                <legend class="text-center">Contact Form</legend>
+                <legend class="text-center">Astronaut Application Form</legend>
                 
                 <!-- Name input-->
             <div class="form-group">
-                <label class="col-md-3 control-label" for="name">Name</label>
+                <label class="col-md-3 control-label" for="name">Full Name</label>
             <div class="col-md-9">
                 <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+            </div>
+            </div>
+
+               <!-- Age input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="name">Age</label>
+            <div class="col-md-9">
+                <input id="age" name="age" type="text" placeholder="Your age" class="form-control">
+            </div>
+            </div>
+
+               <!-- Gender input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="name">Gender</label>
+            <div class="col-md-9">
+                <input id="gender" name="gender" type="text" placeholder="Your gender" class="form-control">
             </div>
             </div>
                 
@@ -92,9 +224,17 @@
                 
             <!-- Message body -->
             <div class="form-group">
-                <label class="col-md-3 control-label" for="message">Your message</label>
+                <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
             <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
+            </div>
+            </div>
+                
+            <!-- Message body -->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
+            <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
             </div>
             </div>
             <br>
@@ -102,7 +242,7 @@
             <!-- Form actions -->
             <div class="form-group">
             <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg">Submit!</button>
             </div>
             </div>
             </fieldset>
@@ -110,15 +250,3 @@
             </div>
         </div>
         </div>
-      
-    </div>
-    
-</div>
-</div>
-</div>
- 
-</footer>
-
-
-
-</html>
