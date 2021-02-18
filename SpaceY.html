@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/Earth.jpg" />
   <link rel="stylesheet" type="text/css" href="SpaceY.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- Bootstrap -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Font awesome -->
   <script type="text/javascript" src="SpaceY.js"></script>
   <title>SpaceY</title>
 </head>
@@ -45,17 +47,78 @@
       <img src="images/modelRocket.png" width = 275px height = 270px alt="Model Rocket">
     </div>
   </div>
-  
-  <div class="footer">
-    <p>Footer</p>
-  </div>
 
 
 </body>
+ 
+ <!-- Footer begins here -->
 
-<footer>
+  <footer class="container-fluid">
+    <div id="FooterFrame">
+    <div class="row">
+        <!-- Section of footer for external links -->
+        <div class="col-sm-2">
+            <h5>© 2021 SpaceY</h5>
+            <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/tvk-supermarket-terms-and-conditions">Terms & Conditions</ul></a>
+            <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/about-us">About Us</ul></a>
+            <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/contact-us">Contact Us</ul></a>
+        </div>
 
+        <!-- Section of footer for contact us form -->
+        <div class="col-sm-10"> 
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+            <div class="well well-sm">
+                <form class="form-horizontal" action="" method="post">
+                <fieldset>
+                <legend class="text-center">Contact Form</legend>
+                
+                <!-- Name input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="name">Name</label>
+            <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+            </div>
+            </div>
+                
+            <!-- Email input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="email">Your E-mail</label>
+            <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+            </div>
+            </div>
+                
+            <!-- Message body -->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="message">Your message</label>
+            <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+            </div>
+            </div>
+            <br>
+
+            <!-- Form actions -->
+            <div class="form-group">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            </div>
+            </fieldset>
+            </form>
+            </div>
+        </div>
+        </div>
+      
+    </div>
+    
+</div>
+</div>
+</div>
+ 
 </footer>
+
 
 
 </html>
