@@ -8,8 +8,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/Earth.jpg" />
   <link rel="stylesheet" type="text/css" href="SpaceY.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- Bootstrap -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Font awesome -->
   <script type="text/javascript" src="SpaceY.js"></script>
   <title>SpaceY</title>
+  <style>
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      margin-top:13px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: right;
+      overflow: hidden;
+      position: relative;
+      z-index:999;
+    }
+    
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      z-index:999;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+      background-color:red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      min-height:25rem;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index:999;
+    }
+
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .show {
+      display: block;
+    }
+    </style>
+
 </head>
 
 <body>
@@ -19,35 +91,149 @@
   </div>
 
   <div class="header">
-    <h1>Header</h1>
+    <h1>SpaceY</h1>
   </div>
 
-  <div class="topnav">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
+
+  <div class="navbar">
+    <a href="#home">Menu3</a>
+    <a href="#news">Menu2</a>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Menu1
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    </div> 
+
+     
   </div>
+
   
-  <div class="flex-container-single">
-    <div>1</div>  
-  </div>
-  
-  <div class="flex-container-triple">
-    <div>2</div>  
-    <div>3</div>
-    <div>4</div>
-  </div>
-  
-  <div class="footer">
-    <p>Footer</p>
-  </div>
+  <div class="container">    
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">BLACK FRIDAY DEAL</div>
+          <div class="panel-body"><div class="buttoncontainer">
+            <img src="images/launchWithSmoke.jpg" width = "100%" alt="SpaceY Rocket Launch, February 2021">
+            <button class="btn"><a href="https://mars.nasa.gov/mars2020/timeline/landing/watch-online/"><b style="color: rgb(180, 1, 1);"><span id="blink-text">WATCH LIVE STREAM</span></b></button>
+          </div></div>
+          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">BLACK FRIDAY DEAL</div>
+          <div class="panel-body"><img src="images/Moon.jpg"  class="img-responsive" style="width:100%" alt="Moon"></div>
+          <div class="panel-footer">Romantic Lunar Getaways for Two</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel panel-danger">
+          <div class="panel-heading">BLACK FRIDAY DEAL</div>
+          <div class="panel-body"><img src="images/marsWalk.jpg" class="img-responsive" style="width:100%" alt="Mars"></div>
+          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel panel-success">
+          <div class="panel-heading">BLACK FRIDAY DEAL</div>
+          <div class="panel-body"><img src="images/modelRocket.jpg" class="img-responsive" style="width:100%" alt="Model"></div>
+          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
 
 
 </body>
+<br>
+<!-- Footer begins here -->
 
-<footer>
+<footer class="container-fluid">
+  <div id="FooterFrame">
+  <div class="row">
+      <!-- Section of footer for external links -->
+      <div class="col-sm-2">
+          <h5>© 2021 SpaceY</h5>
+          <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/tvk-supermarket-terms-and-conditions">Terms & Conditions</ul></a>
+          <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/about-us">About Us</ul></a>
+          <ul><a class="underlined" href="https://www.thevegankindsupermarket.com/contact-us">Contact Us</ul></a>
+      </div>
 
-</footer>
+      <!-- Section of footer for contact us form -->
+      <div class="col-sm-10"> 
+      <div class="container">
+          <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+          <div class="well well-sm">
+              <form class="form-horizontal" action="" method="post">
+              <fieldset>
+              <legend class="text-center">Astronaut Application Form</legend>
+              
+              <!-- Name input-->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Full Name</label>
+          <div class="col-md-9">
+              <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+          </div>
+          </div>
 
+             <!-- Age input-->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Age</label>
+          <div class="col-md-9">
+              <input id="age" name="age" type="text" placeholder="Your age" class="form-control">
+          </div>
+          </div>
 
-</html>
+             <!-- Gender input-->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Gender</label>
+          <div class="col-md-9">
+              <input id="gender" name="gender" type="text" placeholder="Your gender" class="form-control">
+          </div>
+          </div>
+              
+          <!-- Email input-->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+          <div class="col-md-9">
+              <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+          </div>
+          </div>
+              
+          <!-- Message body -->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
+          <div class="col-md-9">
+              <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
+          </div>
+          </div>
+              
+          <!-- Message body -->
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
+          <div class="col-md-9">
+              <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
+          </div>
+          </div>
+          <br>
+
+          <!-- Form actions -->
+          <div class="form-group">
+          <div class="col-md-12 text-right">
+              <button type="submit" class="btn btn-primary btn-lg">Submit!</button>
+          </div>
+          </div>
+          </fieldset>
+          </form>
+          </div>
+      </div>
+      </div>
