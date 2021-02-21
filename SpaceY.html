@@ -3,189 +3,271 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-  <link rel="icon" href="images/Earth.jpg" />
-  <link rel="stylesheet" type="text/css" href="SpaceY.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  -->
-  <script src="https://use.fontawesome.com/5d470cae1d.js"></script> 
-  <script type="text/javascript" src="SpaceY.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <link rel="icon" href="images/Earth.png" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-  <title>SpaceY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="icon" href="images/Earth.jpg" />
+    <link rel="stylesheet" type="text/css" href="SpaceY.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://use.fontawesome.com/5d470cae1d.js"></script>
+    <script type="text/javascript" src="SpaceY.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="icon" href="images/Earth.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    <title>SpaceY</title>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-  <div id="loader"></div>
-  
-  <div style="display:none;" id="myDiv" class="animate-bottom">
-    
-   <div id="searchbardiv">
-    <input type="text" placeholder="Search" />
-  </div> 
+    <div id="loader"></div>
 
- 
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
-  <div class="header">
-    <div class = "pageTitle">SpaceY</div>
-  
-  </div>
-
-  <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Celebrity Customers
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="https://www.forbes.com/sites/jamesasquith/2020/02/26/tourists-in-space-justin-bieber-and-leonardo-dicaprio-have-already-purchased-tickets-as-demand-skyrockets/?sh=185f0ef5241a">Justin Bieber</a>
-        <a href="https://www.forbes.com/sites/jamesasquith/2020/02/26/tourists-in-space-justin-bieber-and-leonardo-dicaprio-have-already-purchased-tickets-as-demand-skyrockets/?sh=185f0ef5241a">Leonardo DiCaprio</a>
-        <a href="https://www.deccanherald.com/content/366005/rihanna-set-travel-space.html">Rihanna</a>
-      </div>
-    </div>
-    <a href="https://www2.northropgrumman.com/suppliers/InnovationSystemsDocuments/NASA%20CROSS%20WAIVER%20OF%20LIABILITY%20FOR%20SPACE%20STATION%20ACTIVITIES.pdf">Health Waivers</a>
-    <a href="#home">Home</a>
-  </div>
-  
-  <div class="content">
-    <div class="bigImContainer">
-      <img src="images/launchWithSmoke.png" alt="smokeyLaunch">
-      <button class="bigImBtn"><a href = "https://spaceflightnow.com/launch-schedule/">UPCOMING LAUNCH DATES</a></button>
-    </div>
-    <h3>SpaceY launches holiday packages that are out of this world!</h3>
-    <p style="text-align:left;">Tens of extremely rich people with extraterrestrial fantasies are taking advantage of the opportunity to take a holiday that doesn't involve sandy beaches, crystal-clear oceans, and all-you-can-eat buffets. Instead they are choosing to pursue trips that previously were only accessible to highly-qualified astronauts!</p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/modelRocket.png" alt="ModelRocket" style="width:100%">
-        <div class="container">
-          <h2>(Let's Get) SpaceY Model Kit</h2>
-          <p class="title"><i>Courtesy of SpaceY's Plastic Bottle Recycling Bin</i></p>
-          <p>£5,000 (Buy One, Get One 5% Off)</p>
-          <p><button class="buyButton">Buy</button></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/marsWalk.png" alt="Mars" style="width:100%">
-        <div class="container">
-          <h2>March Martian Madness</h2>
-          <p class="title"><i>SpaceY Mars Launch, March 2021</i></p>
-          <p>£25,000,000 (Optional Extra: Alien Introduction)</p>
-          <p><button class="buyButton">Buy</button></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/Moon.png" alt="Moon" style="width:100%">
-        <div class="container">
-          <h2>Romantic Lunar Weekend</h2>
-          <p class="title"><i>SpaceY Lunar Launch, February 2021</i></p>
-          <p>£5,000,000 (Breakfast Not Included)</p>
-          <p><button class="buyButton">Buy</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-
-</body>
- 
- <!-- Footer begins here -->
-
-  <footer class="container-fluid">
-    <div id="FooterFrame">
-    <div class="row">
-        <!-- Section of footer for external links -->
-        <div class="col-sm-2">
-            <h5>© 2021 SpaceY</h5>
-            <ul><a class="underlined" href="https://www.inverse.com/innovation/spacex-mars-city-starlink-terms-of-service-declares-free-planet">Terms & Conditions</ul></a>
-            <ul><a class="underlined" href="https://en.wikipedia.org/wiki/SpaceX">Our Partners</ul></a>
-            <ul><a class="underlined" href="https://www.spacex.com/human-spaceflight/#:~:text=To%20start%20planning%20your%20journey,at%20sales%40spacex.com.">Contact Us</ul></a>
+        <div id="searchbardiv">
+            <input type="text" placeholder="Search" />
         </div>
 
-        <!-- Section of footer for contact us form -->
-        <div class="col-sm-10"> 
-          <div class="container">
-              <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-              <div class="well well-sm">
-                  <form class="form-horizontal" action="" method="post">
-                  <fieldset>
-                  <legend class="text-center">Astronaut Application Form</legend>
-                  
-                  <!-- Name input-->
-              <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Full Name</label>
-              <div class="col-md-9">
-                  <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-              </div>
-              </div>
-  
-                 <!-- Age input-->
-              <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Age</label>
-              <div class="col-md-9">
-                  <input id="age" name="age" type="text" placeholder="Your age" class="form-control">
-              </div>
-              </div>
-  
-                 <!-- Gender input-->
-              <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Gender</label>
-              <div class="col-md-9">
-                  <input id="gender" name="gender" type="text" placeholder="Your gender" class="form-control">
-              </div>
-              </div>
-                  
-              <!-- Email input-->
-              <div class="form-group">
-                  <label class="col-md-3 control-label" for="email">Your E-mail</label>
-              <div class="col-md-9">
-                  <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-              </div>
-              </div>
-                  
-              <!-- Message body -->
-              <div class="form-group">
-                  <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
-              <div class="col-md-9">
-                  <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
-              </div>
-              </div>
-              <br>
-  
-              <!-- Form actions -->
-              <div class="form-group">
-              <div class="col-md-12 text-right">
-                  <button type="submit" class="btn btn-primary btn-lg">Submit!</button>
-              </div>
-              </div>
-            <br>
-            </fieldset>
-            </form>
+
+
+        <div class="header">
+            <div class="pageTitle">SpaceY</div>
+
+        </div>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdownToggle()">Celebrity Customers
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://www.forbes.com/sites/jamesasquith/2020/02/26/tourists-in-space-justin-bieber-and-leonardo-dicaprio-have-already-purchased-tickets-as-demand-skyrockets/?sh=185f0ef5241a">Justin Bieber</a>
+                    <a href="https://www.forbes.com/sites/jamesasquith/2020/02/26/tourists-in-space-justin-bieber-and-leonardo-dicaprio-have-already-purchased-tickets-as-demand-skyrockets/?sh=185f0ef5241a">Leonardo DiCaprio</a>
+                    <a href="https://www.deccanherald.com/content/366005/rihanna-set-travel-space.html">Rihanna</a>
+                </div>
+            </div>
+            <a href="https://www2.northropgrumman.com/suppliers/InnovationSystemsDocuments/NASA%20CROSS%20WAIVER%20OF%20LIABILITY%20FOR%20SPACE%20STATION%20ACTIVITIES.pdf">Health Waivers</a>
+            <a href="#home">Home</a>
+        </div>
+
+        <br>
+
+         <!-- Slideshow begins -->
+         <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/launchWithSmoke.png" alt="smokeyLaunch" style="width:100%">
+                <div class="text">
+                    <button class="bigImBtn"><a href = "https://spaceflightnow.com/launch-schedule/"><b style="color: rgb(180, 1, 1);"><span id="blink-text">WATCH LIVE STREAM</span></b></a></button>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/Earth.png" style="width:100%">
+
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/galaxy.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+
+
+        <!-- Singe Launch image with live stream button -->
+        <div class="content">
+            <div class="bigImContainer">
+                <img src="images/launchWithSmoke.png" alt="smokeyLaunch">
+                <button class="bigImBtn"><a href = "https://spaceflightnow.com/launch-schedule/"><b style="color: rgb(180, 1, 1);"><span id="blink-text">WATCH LIVE STREAM</span></b></a></button>
+
+            </div>
+            <h3>SpaceY launches holiday packages that are out of this world!</h3>
+            <p style="text-align:left;">Tens of extremely rich people with extraterrestrial fantasies are taking advantage of the opportunity to take a holiday that doesn't involve sandy beaches, crystal-clear oceans, and all-you-can-eat buffets. Instead they are choosing to pursue
+                trips that previously were only accessible to highly-qualified astronauts!</p>
+        </div>
+
+
+        <!-- Product image cards -->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="images/modelRocket.png" alt="ModelRocket" style="width:100%">
+                    <div class="container">
+                        <h2>(Let's Get) SpaceY Model Kit</h2>
+                        <p class="title"><i>Courtesy of SpaceY's Plastic Bottle Recycling Bin</i></p>
+                        <p>£5,000 (Buy One, Get One 5% Off)</p>
+                        <p><button class="buyButton">Buy</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/marsWalk.png" alt="Mars" style="width:100%">
+                    <div class="container">
+                        <h2>March Martian Madness</h2>
+                        <p class="title"><i>SpaceY Mars Launch, March 2021</i></p>
+                        <p>£25,000,000 (Optional Extra: Alien Introduction)</p>
+                        <p><button class="buyButton">Buy</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/Moon.png" alt="Moon" style="width:100%">
+                    <div class="container">
+                        <h2>Romantic Lunar Weekend</h2>
+                        <p class="title"><i>SpaceY Lunar Launch, February 2021</i></p>
+                        <p>£5,000,000 (Breakfast Not Included)</p>
+                        <p><button class="buyButton">Buy</button></p>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-      
+
+
+        <!-- Footer Begins -->
+        <footer class="FooterFrame">
+            <div class="externallinks">
+                <ul class="links">
+                    <li>
+                        <h5>© 2021 SpaceY</h5>
+                    </li>
+                    <li>
+                        <!-- MAPQUEST HERE -->
+                        <div id="map" style="width: 100%; height: 300px;"></div>
+                    </li>
+                    <li><a class="underlined" href="https://www.inverse.com/innovation/spacex-mars-city-starlink-terms-of-service-declares-free-planet">Terms & Conditions</a></li>
+                    <li><a class="underlined" href="https://en.wikipedia.org/wiki/SpaceX">Our Partners</a></li>
+                    <li><a class="underlined" href="https://www.spacex.com/human-spaceflight/#:~:text=To%20start%20planning%20your%20journey,at%20sales%40spacex.com.">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Section of footer for contact us form -->
+            <div class="col-sm-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" action="/signup" method="POST">
+                                    <fieldset>
+                                        <legend class="text-center">Astronaut Application Form</legend>
+
+                                        <!-- Name input-->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="name">Full Name</label>
+                                            <div class="col-md-9">
+                                                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Age input-->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="name">Age</label>
+                                            <div class="col-md-9">
+                                                <input id="age" name="age" type="text" placeholder="Your age" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Gender input-->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="name">Gender</label>
+                                            <div class="col-md-9">
+                                                <input id="gender" name="gender" type="text" placeholder="Your gender" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Email input-->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                            <div class="col-md-9">
+                                                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Message body -->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="message">Why should you be included in the next SpaceY Astronaut selection?</label>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" id="message" name="message" placeholder="Max. 1000 characters" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <!-- Form actions -->
+                                        <div class="form-group">
+                                            <div class="col-md-12 text-right">
+                                                <button type="submit" class="btn btn-primary btn-lg" >Submit!</button>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
     </div>
-    
-</div>
-</div>
-</div>
- 
-</footer>
-</div>
+    </div>
+
+    </footer>
 
 
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 
 </html>
